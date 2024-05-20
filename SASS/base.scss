@@ -1,0 +1,43 @@
+//** Global **//
+
+* {
+    box-sizing: border-box;
+
+    $font-primary: "Shrikhand", serif;
+    $font-secondary: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+//** text classic **//
+
+/* font weight */
+$font-weight: (
+    light: 300,
+    regular: 400,
+    medium: 500,
+    bold: 700,
+);
+
+
+//** Header specific **//
+
+/* logo */
+
+@mixin cursive__logo {
+    font-size: 27px;
+    font-family: "Shrikhand",cursive;
+}
+
+/* title header */
+
+@mixin title__heading {
+    font-size: 24px;
+    line-height: 1;
+    font-weight: map-get($font-weight,bold);
+}
+
+
