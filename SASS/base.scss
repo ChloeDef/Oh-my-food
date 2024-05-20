@@ -14,7 +14,6 @@ a {
 
 //** text classic **//
 
-/* font weight */
 $font-weight: (
     light: 300,
     regular: 400,
@@ -23,16 +22,12 @@ $font-weight: (
 );
 
 
-//** Header specific **//
-
-/* logo */
+//** Header **//
 
 @mixin cursive__logo {
     font-size: 27px;
-    font-family: "Shrikhand",cursive;
+    font-family: "Shrikhand", cursive;
 }
-
-/* title header */
 
 @mixin title__heading {
     font-size: 24px;
@@ -40,4 +35,119 @@ $font-weight: (
     font-weight: map-get($font-weight,bold);
 }
 
+.header {
+    padding: 2%;
 
+    &__logo {
+        margin: 0;
+        text-align: center;
+        @include cursive__logo;
+    }
+
+    &__withorrow {
+        position: relative;
+    }
+
+    &__goback {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 5%;
+        width: 20px;
+        height: 20px;
+        top: 35%;
+        font-size: 20px;
+
+        @include desktop__responsive {
+            font-size: 32px;
+        }
+    }
+}
+
+
+//** Body **//
+
+.body {
+    width: 100%;
+    margin: auto;
+}
+
+
+//** Footer **//
+
+.footer {
+    width: 100%;
+    padding: 22px 25px;
+    background-color: darken($white, 75%);
+    color: $white;
+
+    @include table__responsive {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        height: 114px;
+        gap: 16px;
+    }
+
+    & p {
+        margin: 5px 0;
+    }
+
+    &__logo {
+        margin: 0 0 16px 0;
+        @include cursive__logo;
+        font-size: 18px;
+
+        @include desktop__responsive {
+            width: 137px;
+            margin: 0;
+        }
+        @include table__responsive {
+            width: 137px;
+            margin: 0;
+        }
+    }
+
+    &__bloc {
+        display: flex;
+        flex-direction: column;
+
+        @include table__responsive {
+            flex-direction: row;
+            align-items: center;
+            gap: 7px;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        font-weight: map-get($font-weight, medium);
+        gap: 7px;
+
+        @include table__responsive {
+            width: 190px;
+        }
+
+        &--icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 16px;
+            height: 13px;
+            font-size: 13px;
+        }
+
+        &--info {
+
+            @include table__responsive {
+               & p {
+                   width: 130px;
+                   height: 20px;
+               }
+           }
+       }
+    }
+}
