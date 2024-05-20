@@ -20,8 +20,6 @@ h1 {
     text-align: center;
 }
 
-
-
 header {
     width: $header-width;
     max-width: $header-width;
@@ -39,16 +37,17 @@ header {
 
 .search-form {
 
+    width: $header-width;
+    height: 50px;
+    background-color: #f3f3f3;
+    box-shadow: 0px 4px 4px 0px #00000040;
+
     .fa-location-dot {
         color: #353535;
     }
 
     .input {
         justify-self: center;
-        width: $header-width;
-        height: 50px;
-        background-color: #f3f3f3;
-        box-shadow: 0px 4px 4px 0px #00000040;
     }
 }
 
@@ -97,6 +96,14 @@ header {
         background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
         color: white;
         border-radius: 30px;
+    }
+
+    p {
+        font-family: $font-secondary;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 21.09px;
+        text-align: center;
     }
 }
 
