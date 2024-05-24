@@ -40,7 +40,7 @@
 
 //* Hero *//
 
-.hero {
+.accueil {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,9 +64,9 @@
     }
 }
 
-//* Functioning *//
+//* Fonctionnnement *//
 
-.functioning {
+.fonctionnement {
     width: $whiteMobile;
     margin: auto;
     padding: 50px 0;
@@ -91,7 +91,7 @@
     }
 }
 
-.functioning__step {
+.fonctionnement__step {
     display: flex;
     align-items: center;
     height: 72px;
@@ -110,7 +110,7 @@
         background-color: lighten($color-primary, 35%);
         @include object-shadow(darken($shadow, 10%));
 
-        &>.functioning__step--icon {
+        &>.fonctionnement__step--icon {
             color: $color-primary;
         }
     }

@@ -111,25 +111,25 @@
     transform: scale(1);
   }
 }
-/* CSS pour les éléments d'entrée */
+/* CSS pour les éléments d'entrées */
 .race-list:nth-child(1) .race-cards {
   animation: appearEntrance 1.5s ease forwards;
   opacity: 0;
 }
 
-/* CSS pour les éléments de plat */
+/* CSS pour les éléments de plats */
 .race-list:nth-child(2) .race-cards {
   animation: appearPlat 5.5s ease forwards;
   opacity: 0;
 }
 
-/* CSS pour les éléments de dessert */
+/* CSS pour les éléments de desserts */
 .race-list:nth-child(3) .race-cards {
   animation: appearDessert 9.5s ease forwards;
   opacity: 0;
 }
 
-/* Animation pour les éléments d'entrée */
+/* Animation pour les éléments d'entrées */
 @keyframes appearEntrance {
   0% {
     opacity: 0;
@@ -140,7 +140,7 @@
     transform: translateY(0);
   }
 }
-/* Animation pour les éléments de plat */
+/* Animation pour les éléments de plats */
 @keyframes appearPlat {
   0% {
     opacity: 0;
@@ -151,7 +151,7 @@
     transform: translateY(0);
   }
 }
-/* Animation pour les éléments de dessert */
+/* Animation pour les éléments de desserts */
 @keyframes appearDessert {
   0% {
     opacity: 0;
