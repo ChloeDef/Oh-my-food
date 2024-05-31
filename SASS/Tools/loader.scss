@@ -2,17 +2,6 @@
     position: fixed;
     height: 100%;
     width: 100%;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    background-color: $white;
-    opacity: 0.95;
-    animation: loading-appear 4s both ease-in-out;
-    z-index: 21;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .loading-object {
@@ -23,8 +12,4 @@
     width: 290px;
     min-width: 290px;
     height: 290px;
-    @include circle;
-    background: $gradient-loader;
-    z-index: 0;
-    animation: rotate-gradient 3s infinite;
 }
