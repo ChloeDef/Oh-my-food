@@ -1,6 +1,8 @@
-
+@use './mixins' as *;
+@use './variables' as *;
 
 //** Global **//
+
 
 * {
     box-sizing: border-box;
@@ -84,7 +86,7 @@ $font-weight: (
     background-color: darken($white, 75%);
     color: $white;
 
-    @include table__responsive {
+    @include tablet__responsive {
         display: flex;
         align-items: center;
         flex-direction: row-reverse;
@@ -106,7 +108,7 @@ $font-weight: (
             width: 137px;
             margin: 0;
         }
-        @include table__responsive {
+        @include tablet__responsive {
             width: 137px;
             margin: 0;
         }
@@ -116,7 +118,7 @@ $font-weight: (
         display: flex;
         flex-direction: column;
 
-        @include table__responsive {
+        @include tablet__responsive {
             flex-direction: row;
             align-items: center;
             gap: 7px;
@@ -129,7 +131,7 @@ $font-weight: (
         font-weight: map-get($font-weight, medium);
         gap: 7px;
 
-        @include table__responsive {
+        @include tablet__responsive {
             width: 190px;
         }
 
@@ -144,7 +146,7 @@ $font-weight: (
 
         &--info {
 
-            @include table__responsive {
+            @include tablet__responsive {
                & p {
                    width: 130px;
                    height: 20px;

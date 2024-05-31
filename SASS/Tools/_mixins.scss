@@ -1,7 +1,10 @@
+@use './variables' as *;
+
+
 /* Gradient */
-@mixin gradient ($oriantation: $degree) {
-    background:linear-gradient( $degree, $color-primary, $color-secondary);
-}
+// @mixin gradient ($oriantation: vars.$degree) {
+//     background:linear-gradient( $degree, $color-primary, $color-secondary);
+// }
 
 /* Shadow */
 @mixin object-shadow ($color: $shadow) {
@@ -13,10 +16,10 @@
     border-radius: 50%;
 }
 
-/* Responsive */
+// /* Responsive */
 
-@mixin table__responsive {
-    @media all and (min-width: map-get($breakpoints, table)) {
+@mixin tablet__responsive {
+    @media all and (min-width: map-get($breakpoints, tablet)) {
         @content;
     }
 }

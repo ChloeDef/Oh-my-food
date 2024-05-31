@@ -1,8 +1,8 @@
-@import 'Tools/animations.scss';
-@import 'Tools/buttons.scss';
-@import 'Tools/index.scss';
-@import 'Tools/loader.scss';
-@import 'Tools/restaurants-pages.scss';
-@import 'Tools/base.scss';
-@import 'Tools/variables.scss';
-@import 'Tools/mixins.scss';
+@use 'Tools/animations.scss' as *;
+@use 'Tools/buttons.scss' as *;
+@use 'Tools/index.scss' as *;
+@use 'Tools/loader.scss' as *;
+@use 'Tools/restaurants-pages.scss' as *;
+@use 'Tools/base.scss' as *;
+@use 'Tools/variables.scss' as *;
+@use 'Tools/mixins.scss' as *;
