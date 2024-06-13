@@ -1,6 +1,6 @@
-@use './variables' as *;
-@use './mixins' as *;
-@use './base' as *;
+@use './_variables' as *;
+@use './_mixins' as *;
+@use './_base' as *;
 
 
 .accueil__btngradient{
@@ -8,7 +8,7 @@
     height: 50px;
     color: $white;
     font-size: 16px;
-    // @include gradient;
+    @include gradient;
     border-radius: 25px;
     border: none;
     font-weight: map-get($font-weight, medium );
@@ -39,7 +39,7 @@
     padding: 0;
     border: transparent 0px solid;
     // background-color: transparent;
-    background-color: black;
+    background-color: transparent;
     -webkit-text-stroke: 1px white;
     cursor: pointer;
 

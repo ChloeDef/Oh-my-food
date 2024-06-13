@@ -1,10 +1,12 @@
-@use './variables' as *;
+@use './_variables' as *;
+
 
 
 /* Gradient */
-// @mixin gradient ($oriantation: vars.$degree) {
-//     background:linear-gradient( $degree, $color-primary, $color-secondary);
-// }
+@mixin gradient ($oriantation:$degree) {
+background:linear-gradient( $degree, $color-primary, $color-secondary);
+}
+
 
 /* Shadow */
 @mixin object-shadow ($color: $shadow) {
@@ -26,6 +28,6 @@
 
 @mixin desktop__responsive {
     @media all and (min-width: map-get($breakpoints, desktop)) {
-        @content
+        @content;
     }
 }

@@ -1,13 +1,17 @@
 @use './mixins' as *;
 @use './variables' as *;
 
-//** Global **//
 
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+//** Global **//
 
 * {
     box-sizing: border-box;
 
-    $font-primary: "Shrikhand", serif;
+    $font-primary: "Shrikhand";
     $font-secondary: "Roboto", sans-serif;
 }
 
@@ -30,13 +34,14 @@ $font-weight: (
 
 @mixin cursive__logo {
     font-size: 27px;
-    font-family: "Shrikhand", cursive;
+    font-family: "Shrikhand";
 }
 
 @mixin title__heading {
     font-size: 24px;
     line-height: 1;
     font-weight: map-get($font-weight,bold);
+    font-family: "Roboto";
 }
 
 .header {
@@ -75,6 +80,7 @@ $font-weight: (
 .body {
     width: 100%;
     margin: auto;
+    font-family: 'Roboto', sans-serif;
 }
 
 

@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
-   <link rel="stylesheet" type="text/css" href="/Assets/CSS/style.css">
-   <title>Oh my food</title>
-
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/Assets/CSS/style.css">
+        <title>Oh my food</title>
+     </head>
+     
 <body class="body">
     
     <header class="header">
-            <img class="header_logo" src="/Assets/Images/logo/ohmyfood@2x.svg" alt= "Logo Oh my food">
-            <form id="search-form">
-                <i class="fa-solid fa-location-dot"></i>
-                <input type="text" id="search-input" placeholder="Paris, Belleville">
-            </form>
+        <h1 class="header__logo">Ohmyfood</h1>
     </header>
 
     <main>
+
+        <div class="info__location">
+            <div class="info__icon">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+                <form class="info__form" method="post" action="traitement.php">
+                    <input class="info__city" type="search">
+                    <label class="placeholder">Paris, Belleville</label>
+                </form>
+            </div> 
+
         <div class="loading-object-container">
             <div class="loading-object">
             </div>
         </div>
 
         <section class="accueil">
-            <h2 class="accueil_title">Réservez le menu qui vous convient</h2>
+            <h2 class="accueil__title">Réservez le menu qui vous convient</h2>
             <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-            <button type="submit" class="accueil_btngradient">Explorez nos restaurants</button>
+            <button type="submit" class="accueil__btngradient">Explorez nos restaurants</button>
         </section>
 
         <section class="fonctionnement">
@@ -41,7 +45,7 @@
 
                 <div class="fonctionnement__step">
                     <p class="fonctionnement__step--number">1</p>
-                    <i class="fas fa-mobile-alt fonctionnement__step--icon"></i>
+                    <i class="fa-solid fa-mobile-screen-button fonctionnement__step--icon"></i>
                     <p class="fonctionnement__step--subtitle">Choisissez un restaurant</p>
                 </div>
 
@@ -62,6 +66,7 @@
         <section class="restaurant">
             <h3 class="restaurant__title">Restaurants</h3>
             <div class="restaurant__bloc">
+
                 <article class="restaurant__cards">
                     <a href="/Restaurants/Restaurant-La-palette-du-gout.html">
                         <div class="restaurant__cards--img">
