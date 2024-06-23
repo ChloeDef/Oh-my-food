@@ -741,22 +741,46 @@ a {
   font-size: 25px;
 }
 
-.loading-object-container {
-  position: fixed;
-  height: 100%;
+.bloc {
+  background-color: white;
   width: 100%;
-}
-
-.loading-object {
-  position: relative;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  opacity: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 290px;
-  min-width: 290px;
-  height: 290px;
+  animation: fadeOut 3s ease-in-out 1.75s forwards;
 }
 
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+.bloc__loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 17px lightgrey;
+  border-radius: 50%;
+  z-index: 1;
+  width: 167px;
+  height: 167px;
+  border-top-color: #9356dc;
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 /* Import Google Fonts */
 /* color */
 /* Degree Gradient */
