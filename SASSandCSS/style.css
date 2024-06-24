@@ -354,6 +354,7 @@ a {
   font-size: 25px;
   content: "\f004";
   color: transparent;
+  background: linear-gradient(357deg, #9356DC, #FF79DA);
   -webkit-background-clip: text;
           background-clip: text;
   transform-origin: bottom;
