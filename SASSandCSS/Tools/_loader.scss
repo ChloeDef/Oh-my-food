@@ -9,12 +9,13 @@
   align-items: center;
   justify-content: center;
   animation: fadeOut 3s ease-in-out 1.75s forwards;
+  pointer-events: none; /* Ajouté */
 }
 
 @keyframes fadeOut {
   to {
     opacity: 0;
-    display: none;
+    visibility: hidden; /* Modifié */
   }
 }
 
