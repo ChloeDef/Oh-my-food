@@ -602,7 +602,6 @@ a {
   }
 }
 .fonctionnement__step:hover {
-  background-color: #f2eafb;
   box-shadow: 0 4px 10px 0 #bcbcbc;
 }
 .fonctionnement__step:hover > .fonctionnement__step--icon {

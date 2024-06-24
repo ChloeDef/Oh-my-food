@@ -115,7 +115,6 @@
     }
 
     &:hover {
-        background-color: lighten($color-primary, 35%);
         @include object-shadow(darken($shadow, 10%));
 
         &>.fonctionnement__step--icon {
