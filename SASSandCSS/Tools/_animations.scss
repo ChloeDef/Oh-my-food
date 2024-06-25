@@ -29,6 +29,45 @@
     }
 }
 
+/* Heart animation */
+
+@keyframes heart-fill {
+    0% {
+        opacity: (0);
+        transform: scale(0.2)
+    }
+
+    15% {
+        opacity: (.25);
+    }
+
+    80% {
+        opacity: (1);
+        transform: scale(1);
+    }
+
+    85% {
+        opacity: (1);
+        transform: scale(1.1);
+    }
+
+    95% {
+        opacity: (1);
+        transform: scale(1.05);
+    }
+
+    100% {
+        opacity: (1);
+        transform: scale(1);
+    }
+}
+
+/* CSS pour les éléments d'entrées */
+
+.race-list:nth-child(1) .race-cards {
+    animation: appearEntrance 1.5s ease forwards;
+    opacity: 0;
+  }
   
   /* CSS pour les éléments de plats */
 
