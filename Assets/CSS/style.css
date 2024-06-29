@@ -155,6 +155,13 @@ a {
     font-size: 32px;
   }
 }
+header a {
+  position: absolute;
+  left: 20px;
+  color: #000;
+  top: 30%;
+}
+
 .body {
   width: 100%;
   margin: auto;
@@ -350,6 +357,13 @@ a {
     font-size: 32px;
   }
 }
+header a {
+  position: absolute;
+  left: 20px;
+  color: #000;
+  top: 30%;
+}
+
 .body {
   width: 100%;
   margin: auto;
@@ -802,6 +816,13 @@ a {
     font-size: 32px;
   }
 }
+header a {
+  position: absolute;
+  left: 20px;
+  color: #000;
+  top: 30%;
+}
+
 .body {
   width: 100%;
   margin: auto;
@@ -1130,6 +1151,13 @@ a {
   .header__goback {
     font-size: 32px;
   }
+}
+
+header a {
+  position: absolute;
+  left: 20px;
+  color: #000;
+  top: 30%;
 }
 
 .body {

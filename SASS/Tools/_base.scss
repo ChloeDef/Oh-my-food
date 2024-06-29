@@ -20,6 +20,7 @@ a {
     color: inherit;
 }
 
+
 //** text classic **//
 
 $font-weight: (
@@ -74,6 +75,12 @@ $font-weight: (
     }
 }
 
+header a {
+    position: absolute;
+    left: 20px;
+    color: #000;
+    top: 30%;
+}
 
 //** Body **//
 
@@ -82,7 +89,6 @@ $font-weight: (
     margin: auto;
     font-family: 'Roboto', sans-serif;
 }
-
 
 //** Footer **//
 
