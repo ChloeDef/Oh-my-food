@@ -19,13 +19,16 @@
     animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
   }
 }
+
 .fade-in {
   transform-origin: top;
   animation: fade-in 2s forwards;
 }
+
 .fade-in--1delay {
   animation: fade-in 2s 500ms both;
 }
+
 .fade-in--2delay {
   animation: fade-in 2s 1000ms both;
 }
